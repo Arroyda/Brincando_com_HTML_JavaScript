@@ -1,0 +1,32 @@
+#meuBotao {
+    background-color: pink; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    margin-top: 100px;
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Retira o sublinhado */
+    display: inline-block; /* Deixa o botão em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Retira a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão */
+    transition: background-color 0.3s; /* Transição suave na cor do fundo */
+}
+
+/* Efeito ao passar o mouse por cima */
+#meuBotao:hover {
+    background-color: rgb(223, 117, 135); /* Cor de fundo quando o mouse passa por cima */
+}
+
+#textoPrincipal {
+    background-color: rgb(224, 224, 224);
+    color: black;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#caco {
+    width: 1270px;
+    height: 720px;
+}

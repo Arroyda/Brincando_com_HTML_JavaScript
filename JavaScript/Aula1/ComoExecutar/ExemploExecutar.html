@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01 - JavaScript</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+
+<body>
+    <!-- Aqui criamos um "titulo" onde está centralizada na tela -->
+    <center>
+        <p id="textoPrincipal">Exemplos de Execução JavaScript</p>
+        <!-- Botão para redirecionar -->
+        <button id="meuBotao">Mistery Box</button>
+    </center>
+
+    <script>
+        // Seleciona o botão pelo ID
+        document.getElementById("meuBotao").addEventListener("click", function() {
+            // Primeiro redireciona para o link da imagem
+            window.location.replace("/JavaScript/Aula1/ComoExecutar/ExemploExecutar2.html"); // Redireciona para "ExemploExecutar.html"            
+            
+        });
+        </script>
+
+    <!-- Aqui conseguimos executar um Script onde mostra uma mensagem no console do Navegador -->
+    <script>
+        console.log("Primeira maneira de executar um Script");
+    </script>
+
+    <!-- Aqui executamos um Script onde puxamos um arquivo JavaScript -->
+    <!-- <script src="/JavaScript/Aula1/ComoExecutar/SegundaManeira.js"></script> -->
+</body>
+</html>
