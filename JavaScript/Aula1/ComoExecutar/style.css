@@ -2,7 +2,7 @@
     background-color: pink; /* Cor de fundo */
     color: black; /* Cor do texto */
     padding: 15px 32px; /* Espaçamento interno */
-    margin-top: 100px;
+    margin-top: 10px;
     text-align: center; /* Alinhamento do texto */
     text-decoration: none; /* Retira o sublinhado */
     display: inline-block; /* Deixa o botão em linha */
@@ -21,12 +21,87 @@
 #textoPrincipal {
     background-color: rgb(224, 224, 224);
     color: black;
+    max-width: 500px;
+    border-radius: 50px;
     margin-top: 50px;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#textoPrincipal2 {
+    background-color: rgb(224, 224, 224);
+    color: black;
+    max-width: 500px;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: piscar 0.5s infinite; /* Ciclo contínuo de 1 segundo */
+}
+
+@keyframes piscar {
+    0% {
+        background-color: rgba(255, 0, 0, 0.5); /* Vermelho com opacidade 50% */
+    }
+    25% {
+        background-color: rgba(0, 255, 0, 0.5); /* Verde com opacidade 50% */
+    }
+    50% {
+        background-color: rgba(0, 0, 255, 0.5); /* Azul com opacidade 50% */
+    }
+    75% {
+        background-color: rgba(255, 255, 0, 0.5); /* Amarelo com opacidade 50% */
+    }
+    100% {
+        background-color: rgba(255, 0, 255, 0.5); /* Magenta com opacidade 50% */
+    }
+}
+
 #caco {
-    width: 1270px;
-    height: 720px;
+    width: 480px;
+    height: 500px;
+    display: block; /* Garante que a imagem seja exibida corretamente */
+}
+
+.container2 {
+    position: relative; /* Define o container como posição relativa */
+    display: inline-block; /* Permite que a imagem e o GIF fiquem alinhados */
+}
+
+.imagem {
+    display: block; /* Garante que a imagem seja exibida corretamente */
+}
+
+.gif {
+    position: absolute; /* Coloca o GIF sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 500px;
+    z-index: 10; /* Coloca o GIF acima da imagem */
+}
+
+#textoDescubra {
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: red;
+}
+
+#confete {
+    width: 50px;
+    height: 50px;
+}
+
+#confete2 {
+    width: 50px;
+    height: 50px;
+    transform: scaleX(-1);
+}
+
+#imagem, #meuBotao {
+    display: inline-block; /* Faz com que a imagem e o botão fiquem lado a lado */
+    vertical-align: middle; /* Alinha verticalmente no meio */
+    margin-right: 10px; /* Espaço entre a imagem e o botão */
+    margin-left: 10px; /* Espaço entre a imagem e o botão */
 }
